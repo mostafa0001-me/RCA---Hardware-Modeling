@@ -42,7 +42,7 @@ To rerun the entire experiment, including the greedy algorithm for selecting a s
 
     ```python
     import random
-    candidate_set = random.sample(G.nodes(), 7)  # Example: select 7 random nodes
+    candidate_set = random.sample(list(G.nodes()), 7)  # Example: select 7 random nodes
     ```
 
 3. **Define Experiment Parameters:** Set the values of infection probability (`p`), recovery probability (`r`), and the number of trials (`sigma`) for average spread calculation.
